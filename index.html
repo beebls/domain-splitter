@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-conl" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domain Splitter - Generate Shortened Domains</title>
+    <!-- META TAGS -->
+    <meta name="title" content="Domain Splitter" />
+    <meta
+      name="description"
+      content="Shorten your domain using a TLD. (Turn 'youtube.com' into 'youtu.be')"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://domain-splitter.beebl.es/" />
+    <meta property="og:title" content="Domain Splitter" />
+    <meta
+      property="og:description"
+      content="Shorten your domain using a TLD. (Turn 'youtube.com' into 'youtu.be')"
+    />
+    <meta
+      property="og:image"
+      content="https://domain-splitter.beebl.es/meta.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://domain-splitter.beebl.es/" />
+    <meta property="twitter:title" content="Domain Splitter" />
+    <meta
+      property="twitter:description"
+      content="Shorten your domain using a TLD. (Turn 'youtube.com' into 'youtu.be')"
+    />
+    <meta
+      property="twitter:image"
+      content="https://domain-splitter.beebl.es/meta.png"
+    />
+  </head>
+  <body>
+    <div
+      class="w-screen h-screen flex flex-col justify-center bg-gradient-to-br from-slate-100 to-slate-400"
+    >
+      <div class="text-center m-auto px-10">
+        <div class="pb-5">
+          <h1
+            class="text-6xl md:text-8xl font-bold pb-5 bg-clip-text bg-gradient-to-tl from-slate-900 to-slate-700 text-transparent"
+          >
+            Domain Splitter
+          </h1>
+          <div class="pb-5">
+            <h2 class="text-xl font-medium">
+              Enter a word, and see what possible shortened domains you could
+              purchase
+            </h2>
+            <h3 class="text-lg font-light">
+              (Does not check for domain avaliability, simply what valid
+              extensions could be used)
+            </h3>
+          </div>
+          <form id="form">
+            <input
+              id="field"
+              type="text"
+              placeholder="Enter a word/name"
+              class="bg-gradient-to-tl from-slate-400 to-slate-200 px-5 py-2 rounded-3xl border-slate-800 border-2 text-slate-800 placeholder:text-slate-500 placeholder:text-center placeholder:text-lg caret-slate-700"
+            />
+            <br />
+            <input
+              id="submit"
+              type="submit"
+              value="Search!"
+              class="mt-5 text-2xl text-slate-800 font-semibold cursor-pointer"
+            />
+          </form>
+        </div>
+        <div id="answer" class="invisible">
+          <div class="text-2xl">
+            <span id="matchInfo" class="font-medium"
+              >All valid TLD's found:
+            </span>
+            <span
+              id="matches"
+              class="font-semibold bg-gradient-to-tl from-green-800 to-green-600 bg-clip-text text-transparent"
+            ></span>
+          </div>
+          <div class="text-xl">
+            <div>
+              <span id="domainInfo">Possible domains: </span>
+              <span
+                id="fullDomains"
+                class="font-medium bg-gradient-to-tl from-green-800 to-green-600 bg-clip-text text-transparent"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-auto ml-auto p-4 pb-2">
+        <a
+          href="https://beebl.es"
+          target="_blank"
+          class="font-medium text-slate-900 text-xl"
+          >Made by Beebl.es</a
+        >
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
